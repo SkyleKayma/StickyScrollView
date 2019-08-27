@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver;
-import android.support.v4.widget.NestedScrollView;
+import androidx.core.widget.NestedScrollView;
 
 import com.amar.library.R;
 import com.amar.library.provider.ResourceProvider;
