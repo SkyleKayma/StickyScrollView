@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.amar.library.ui.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.amar.library.ui.NestedStickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:stickyFooter="@+id/buttons"
-    app:stickyHeader="@+id/title"
-    tools:context="com.amar.sample.MainActivity">
+    app:stickyHeader="@+id/title">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/main_shoe_picture"
             android:layout_width="match_parent"
             android:layout_height="420dp"
@@ -44,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:text="Product Description goes here"
                 android:textStyle="italic" />
+
         </LinearLayout>
 
         <View
@@ -70,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:text="Other product info goes here"
                 android:textStyle="italic" />
+
         </LinearLayout>
 
         <View
@@ -94,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:text="Similar goes here"
                 android:textStyle="italic" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -112,7 +113,8 @@
                 android:padding="15dp"
                 android:text="SAVE"
                 android:textColor="@android:color/white"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:drawableStart="@mipmap/ic_wishlist" />
 
             <TextView
                 android:id="@+id/buy"
@@ -125,7 +127,9 @@
                 android:maxLines="1"
                 android:text="BUY"
                 android:textColor="@android:color/white"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:drawableStart="@mipmap/ic_bag" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -145,6 +149,7 @@
                 android:layout_height="wrap_content"
                 android:text="You can add more data here"
                 android:textStyle="italic" />
+
         </LinearLayout>
 
         <View
@@ -164,17 +169,20 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="220dp"
                 android:layout_weight="1"
                 android:src="@drawable/similar_1" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="620dp"
                 android:layout_weight="1"
                 android:src="@drawable/similar_2" />
+
         </LinearLayout>
+
     </LinearLayout>
-</com.amar.library.ui.StickyScrollView>
+
+</com.amar.library.ui.NestedStickyScrollView>
