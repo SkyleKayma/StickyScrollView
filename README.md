@@ -1,4 +1,4 @@
-# StickyScrollView
+# NestedStickyScrollView
 Sticky header and footer for android ScrollView.
 
 IMPORTANT: This is a fork. Give credit to original author. It's just an updated repo cause the first one is not maintained anymore.
@@ -16,18 +16,21 @@ Just clone and assemble library to create .aar and add it to your project.
 		app:stickyHeader="@+id/titleLayout"
     		app:stickyFooter="@+id/buttonLayout">
 		...
+		
 		<LinearLayout
             		android:id="@+id/titleLayout"
             		android:layout_width="match_parent"
             		android:layout_height="wrap_content">
 			...
-        	</LinearLayout>		
+        	</LinearLayout>	
+		
 		<LinearLayout
             		android:id="@+id/buttonLayout"
             		android:layout_width="match_parent"
             		android:layout_height="wrap_content">
 			...
         	</LinearLayout>	
+		
 		...
 	</com.amar.library.ui.NestedStickyScrollView>
 	
