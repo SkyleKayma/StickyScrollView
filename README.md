@@ -1,28 +1,15 @@
 # StickyScrollView
 Sticky header and footer for android ScrollView.
 
+IMPORTANT: This is a fork. Give credit to original author. It's just an updated repo cause the first one is not maintained anymore.
+
 ### Install
 
-Add jitpack to your root `build.gradle`
-```
-	allprojects {
-		repositories {
-			...
-			maven { url "https://jitpack.io" }
-		}
-	}
-```
-
-Add the dependency
-```
-	dependencies {
-	        compile 'com.github.amarjain07:StickyScrollView:1.0.2'
-	}
-```
+Just clone and assemble library to create .aar and add it to your project.
 
 ### Usage
 ```
-	<com.amar.library.ui.StickyScrollView
+	<com.amar.library.ui.NestedStickyScrollView
    		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
     		android:layout_height="match_parent"
@@ -42,7 +29,7 @@ Add the dependency
 			...
         	</LinearLayout>	
 		...
-	</com.amar.library.ui.StickyScrollView>
+	</com.amar.library.ui.NestedStickyScrollView>
 	
 ```
 
